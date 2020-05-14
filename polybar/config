@@ -46,17 +46,16 @@ fixed-center = true
 
 
 
-background = #21252B
+background = #111216
 foreground = #A0A0A0
-border-color = #21252B
+border-color = #111216
 font-1 = custom157:size=25;7
-font-4 = kane890:size=20;4 
-font-2 = kanem:size=29;6
+font-2 = kane89:size=10;6
 font-0 = Roboto condensed:style=bold:size=13;0"
 font-3 = "iosevka custom:style=bold:size=15;7" 
  
 modules-left   =    custom1 i3   
-modules-center =   
+modules-center =   custom3
 modules-right  =    backlight-acpi custom battery  volume 
 
 border-size = 3
@@ -66,7 +65,7 @@ module-margin-left  = 0
 module-margin-right = 0
 module-margin-center = 0
 
-bottom = false
+bottom = true
 
 [module/network]
 type          = internal/network
@@ -168,31 +167,31 @@ index-sort = true
 wrapping-scroll = true
 strip-wsnumbers = true
 label-mode = %mode%
-label-mode-padding = 3
+label-mode-padding = 4
 label-mode-foreground = #91929A
 label-mode-background = 
 label-focused = %icon%
 label-focused-background = 
 label-focused-foreground = #A6B8B6
-label-focused-padding = 3
+label-focused-padding = 4
 label-unfocused = %icon%
 label-unfocused-foreground =  #737C8C
-label-unfocused-padding = 3
+label-unfocused-padding = 4
 label-visible = %icon%
 label-visible-background = #2F3240
 label-visible-padding = ${self.label-focused-padding}
 label-urgent = %icon%
 label-urgent-background = 
 label-urgent-foreground = #f0f8ff
-label-urgent-padding = 3
+label-urgent-padding = 4
 format-foreground = #9A1C1F
 format-background = 
 label-focused-underline= #f0f8ff
 
 ws-icon-1 = "1;MAIN"
 ws-icon-2 = "2;TERM"
-ws-icon-3 = "3;TEST"
-ws-icon-4 = "4;TEST1"
+ws-icon-3 = "3;OTHER"
+ws-icon-4 = "4;FILES"
 ws-icon-5 = "5;"
 ws-icon-6 = "6;"
 ws-icon-0 = "7;"
@@ -251,7 +250,7 @@ bar-volume-indicator =
 bar-volume-indicator-foreground = #404645
 bar-volume-fill = ▋
 
-bar-volume-fill-foreground = #61AFEF
+bar-volume-fill-foreground = #252F30
 bar-volume-empty = ▋
 bar-volume-empty-foreground = #5A5B5D
 
@@ -266,7 +265,7 @@ ramp-headphones-1 = 
 
 [module/custom3]
 type = custom/text
-content = 
+content = 
 content-padding = 0
 content-background = #0C121B
 content-foreground = #606060
@@ -279,7 +278,7 @@ content-foreground = N#aaC5C9CC
 
 [module/custom1]
 type = custom/text
-content = 
+content = 
 content-padding = 0
 content-foreground = #A0A0A0
 click-left = rofi -show drun 
@@ -382,7 +381,7 @@ bar-capacity-format = %{T4}%fill%%empty%%{F-}%{T-}
 ; bar-capacity-fill = █
 ; bar-capacity-fill = █
 bar-capacity-fill = ▌
-bar-capacity-fill-foreground = #a8328d
+bar-capacity-fill-foreground = #21282a
 bar-capacity-fill-font = 6
 ; bar-capacity-empty = ▌
 ; bar-capacity-empty = ▌
@@ -390,16 +389,16 @@ bar-capacity-empty = ▌
 bar-capacity-empty-font = 6
 bar-capacity-empty-foreground = #454A54
 
-bar-capacity-foreground-0 = #98C379
-bar-capacity-foreground-1 = #98C379
-bar-capacity-foreground-2 = #98C379
-bar-capacity-foreground-3 = #98C379
-bar-capacity-foreground-4 = #98C379
-bar-capacity-foreground-5 = #98C379
-bar-capacity-foreground-6 = #98C379
-bar-capacity-foreground-7 = #98C379
-bar-capacity-foreground-8 = #98C379
-bar-capacity-foreground-9 = #98C379
+bar-capacity-foreground-0 = #21282a
+bar-capacity-foreground-1 = #21282a
+bar-capacity-foreground-2 = #21282a
+bar-capacity-foreground-3 = #21282a
+bar-capacity-foreground-4 = #21282a
+bar-capacity-foreground-5 = #21282a
+bar-capacity-foreground-6 = #21282a
+bar-capacity-foreground-7 = #21282a
+bar-capacity-foreground-8 = #21282a
+bar-capacity-foreground-9 = #21282a
 
 ; Only applies if <animation-charging> is used
 animation-charging-0 = 

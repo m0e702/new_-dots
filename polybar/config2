@@ -46,9 +46,9 @@ fixed-center = true
 
 
 
-background = #21252B
+background = #111216
 foreground = #FFFFFF
-border-color = #21252B
+border-color = #111216
 font-1 = custom157:size=25;7
 font-4 = kane890:size=20;4 
 font-2 = kanem:size=29;6
@@ -57,7 +57,7 @@ font-3 = "iosevka custom:style=bold:size=15;7"
  
 modules-left   = custom1
 modules-center =   
-modules-right  =    date time
+modules-right  =    date time  
 
 border-size = 3
 padding-left        = 0
@@ -432,5 +432,18 @@ type = custom/text
 content = Kane
 content-padding = 7
 format-content margin = 8
+content-foreground = #FFFFFF  
+ 
+[module/space]
+type = custom/text
+content = 
+content-padding = 0
+format-content margin = 0
 content-foreground = #FFFFFF 
-
+ 
+[module/space2]
+type = custom/text
+content = 
+content-padding = 0
+format-content margin = 0
+content-foreground = #FFFFFF 
