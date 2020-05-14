@@ -34,7 +34,7 @@ margin-bottom     = 0
 monitor = eDP1 
 monitor-fallback = DP-2
 width    = 100%
-height   = 40
+height   = 35
 offset-x = 0
 offset-y = 0 
 line-size = 0
@@ -46,23 +46,23 @@ fixed-center = true
 
 
 
-background = #111216
+background = #282C34
 foreground = #A0A0A0
-border-color = #111216
-font-1 = custom157:size=25;7
+border-color = #282C34
+font-1 = custom157:size=20;7
 font-2 = kane89:size=10;6
-font-0 = Roboto condensed:style=bold:size=13;0"
-font-3 = "iosevka custom:style=bold:size=15;7" 
+font-0 = Roboto condensed:style=bold:size=10;5"
+font-3 = "iosevka custom:style=bold:size=9;5" 
  
-modules-left   =    custom1 i3   
-modules-center =   custom3
-modules-right  =    backlight-acpi custom battery  volume 
+modules-left   =   custom1 i3
+modules-center =   date time
+modules-right  =    volume   battery 
 
 border-size = 3
 padding-left        = 0
 padding-right       = 0
 module-margin-left  = 0
-module-margin-right = 0
+module-margin-right = 3
 module-margin-center = 0
 
 bottom = true
@@ -89,14 +89,14 @@ date                     = %H:%M
  format-prefix            = 
 format-prefix-foreground = 
 format-foreground = #E5C07B
-format-padding   = 1
+format-padding   = 2
  
 [module/date]
 type = internal/date
 interval = 30
 label =  %time%
 time =  %A, %d %B %
-format-padding   = 1
+format-padding   = 2
 format-foreground = #FFFFFF
   
 [module/browser]
@@ -172,7 +172,7 @@ label-mode-foreground = #91929A
 label-mode-background = 
 label-focused = %icon%
 label-focused-background = 
-label-focused-foreground = #A6B8B6
+label-focused-foreground = #E06C75
 label-focused-padding = 4
 label-unfocused = %icon%
 label-unfocused-foreground =  #737C8C
@@ -188,12 +188,12 @@ format-foreground = #9A1C1F
 format-background = 
 label-focused-underline= #f0f8ff
 
-ws-icon-1 = "1;MAIN"
-ws-icon-2 = "2;TERM"
-ws-icon-3 = "3;OTHER"
-ws-icon-4 = "4;FILES"
-ws-icon-5 = "5;"
-ws-icon-6 = "6;"
+ws-icon-1 = "1;"
+ws-icon-2 = "2;"
+ws-icon-3 = "3;"
+ws-icon-4 = "4;"
+ws-icon-5 = "5;"
+ws-icon-6 = "6;"
 ws-icon-0 = "7;"
 
 
@@ -248,11 +248,11 @@ label-muted-foreground = #C7563D
 bar-volume-width = 8
 bar-volume-indicator =  
 bar-volume-indicator-foreground = #404645
-bar-volume-fill = ▋
+bar-volume-fill = █
 
-bar-volume-fill-foreground = #252F30
-bar-volume-empty = ▋
-bar-volume-empty-foreground = #5A5B5D
+bar-volume-fill-foreground = #518BBB
+bar-volume-empty = █
+bar-volume-empty-foreground = #5C6370
 
 ramp-volume-0 =  
 ramp-volume-1 =   
@@ -278,7 +278,7 @@ content-foreground = N#aaC5C9CC
 
 [module/custom1]
 type = custom/text
-content = 
+content = 
 content-padding = 0
 content-foreground = #A0A0A0
 click-left = rofi -show drun 
@@ -375,30 +375,30 @@ ramp-capacity-3 = 
 ramp-capacity-4 = 
 
 ; Only applies if <bar-capacity> is used
-bar-capacity-width = 7
+bar-capacity-width = 8
 bar-capacity-gradient = false
 bar-capacity-format = %{T4}%fill%%empty%%{F-}%{T-}
 ; bar-capacity-fill = █
 ; bar-capacity-fill = █
-bar-capacity-fill = ▌
+bar-capacity-fill = █
 bar-capacity-fill-foreground = #21282a
 bar-capacity-fill-font = 6
-; bar-capacity-empty = ▌
-; bar-capacity-empty = ▌
-bar-capacity-empty = ▌
+; bar-capacity-empty = █
+; bar-capacity-empty = █
+bar-capacity-empty = █
 bar-capacity-empty-font = 6
 bar-capacity-empty-foreground = #454A54
 
-bar-capacity-foreground-0 = #21282a
-bar-capacity-foreground-1 = #21282a
-bar-capacity-foreground-2 = #21282a
-bar-capacity-foreground-3 = #21282a
-bar-capacity-foreground-4 = #21282a
-bar-capacity-foreground-5 = #21282a
-bar-capacity-foreground-6 = #21282a
-bar-capacity-foreground-7 = #21282a
-bar-capacity-foreground-8 = #21282a
-bar-capacity-foreground-9 = #21282a
+bar-capacity-foreground-0 = #E5C07B
+bar-capacity-foreground-1 = #E5C07B
+bar-capacity-foreground-2 = #E5C07B
+bar-capacity-foreground-3 = #E5C07B
+bar-capacity-foreground-4 = #E5C07B
+bar-capacity-foreground-5 = #E5C07B
+bar-capacity-foreground-6 = #E5C07B
+bar-capacity-foreground-7 = #E5C07B
+bar-capacity-foreground-8 = #E5C07B
+bar-capacity-foreground-9 = #E5C07B
 
 ; Only applies if <animation-charging> is used
 animation-charging-0 = 
@@ -428,7 +428,7 @@ animation-charging-framerate = 750
 
 [module/custom]
 type = custom/text
-content = 
+content =  
 content-padding = 1
 format-content margin = 8
-content-foreground = #FFFFFF
+content-foreground = #A0A0A0
