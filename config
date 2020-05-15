@@ -31,10 +31,11 @@ bindsym $mod+b  layout splitv;\
 # 
 
 # class                  border    bg        text      indicator   child_border
-client.focused           #21252B #21252B  #FF5733   #575757     #ccf518
-client.focused_inactive  #7a7a7a #f5f5f5 #FF5733   #ccf518     #293236
-client.unfocused         #293236 #293236 FF5733    #293236     #293236
-client.urgent            #293236 #293236 #FF5733    #1f2126       #293236 
+client.focused           #100f10  #100f10  #FF5733   #575757     #ccf518
+client.focused_inactive  #100f10  #100f10   #FF5733   #ccf518     #293236
+client.unfocused         #100f10 #100f10  FF5733    #293236     #293236
+client.urgent            #100f10  #100f10  #FF5733    #1f2126       #293236 
+ 
  
  
 for_window [class="^.*"] border normal 0
