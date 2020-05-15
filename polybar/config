@@ -34,7 +34,7 @@ margin-bottom     = 0
 monitor = eDP1 
 monitor-fallback = DP-2
 width    = 100%
-height   = 35
+height   = 38
 offset-x = 0
 offset-y = 0 
 line-size = 0
@@ -46,17 +46,17 @@ fixed-center = true
 
 
 
-background = #282C34
+background = #100F10
 foreground = #A0A0A0
-border-color = #282C34
+border-color = #100F10
 font-1 = custom157:size=20;7
 font-2 = kane89:size=10;6
 font-0 = Roboto condensed:style=bold:size=10;5"
-font-3 = "iosevka custom:style=bold:size=9;5" 
+font-3 = "iosevka custom:style=bold:size=10;5" 
  
 modules-left   =   custom1 i3
-modules-center =   date time
-modules-right  =    volume   battery 
+modules-center =   
+modules-right  =      volume   battery  
 
 border-size = 3
 padding-left        = 0
@@ -88,14 +88,14 @@ interval                 = 30
 date                     = %H:%M
  format-prefix            = 
 format-prefix-foreground = 
-format-foreground = #E5C07B
+format-foreground = #A0A0A0
 format-padding   = 2
  
 [module/date]
 type = internal/date
 interval = 30
 label =  %time%
-time =  %A, %d %B %
+time =  ▎%A, %d %B %▎
 format-padding   = 2
 format-foreground = #FFFFFF
   
@@ -109,8 +109,8 @@ click-right = chromium-web &
  
 [module/spacer]
 type = custom/text
-content = ∣
-content-foreground = #cc414458
+content =  ▎
+content-foreground = #cc171717
 content-padding = 0
 
  
@@ -172,10 +172,10 @@ label-mode-foreground = #91929A
 label-mode-background = 
 label-focused = %icon%
 label-focused-background = 
-label-focused-foreground = #E06C75
+label-focused-foreground = #93A593
 label-focused-padding = 4
 label-unfocused = %icon%
-label-unfocused-foreground =  #737C8C
+label-unfocused-foreground =  #787878
 label-unfocused-padding = 4
 label-visible = %icon%
 label-visible-background = #2F3240
@@ -250,9 +250,9 @@ bar-volume-indicator =
 bar-volume-indicator-foreground = #404645
 bar-volume-fill = █
 
-bar-volume-fill-foreground = #518BBB
-bar-volume-empty = █
-bar-volume-empty-foreground = #5C6370
+bar-volume-fill-foreground = #3F63A0
+bar-volume-empty =  █
+bar-volume-empty-foreground = #1A181C
 
 ramp-volume-0 =  
 ramp-volume-1 =   
@@ -280,7 +280,7 @@ content-foreground = N#aaC5C9CC
 type = custom/text
 content = 
 content-padding = 0
-content-foreground = #A0A0A0
+content-foreground = #9286E8
 click-left = rofi -show drun 
 click-right = rofi -show drun -theme sidetab.rasi
  
@@ -357,7 +357,7 @@ label-charging =
 ;   %percentage% (default)
 ;   %time%
 ;   %consumption% (shows current discharge rate in watts)
-label-discharging = 
+label-discharging = BAT
 ; Available tokens:
 ;   %percentage% (default)
 label-full = Fully Charged
@@ -389,16 +389,16 @@ bar-capacity-empty = █
 bar-capacity-empty-font = 6
 bar-capacity-empty-foreground = #454A54
 
-bar-capacity-foreground-0 = #E5C07B
-bar-capacity-foreground-1 = #E5C07B
-bar-capacity-foreground-2 = #E5C07B
-bar-capacity-foreground-3 = #E5C07B
-bar-capacity-foreground-4 = #E5C07B
-bar-capacity-foreground-5 = #E5C07B
-bar-capacity-foreground-6 = #E5C07B
-bar-capacity-foreground-7 = #E5C07B
-bar-capacity-foreground-8 = #E5C07B
-bar-capacity-foreground-9 = #E5C07B
+bar-capacity-foreground-0 = #3E7F80
+bar-capacity-foreground-1 = #3E7F80
+bar-capacity-foreground-2 = #3E7F80
+bar-capacity-foreground-3 = #3E7F80
+bar-capacity-foreground-4 = #3E7F80
+bar-capacity-foreground-5 = #3E7F80
+bar-capacity-foreground-6 = #3E7F80
+bar-capacity-foreground-7 = #3E7F80
+bar-capacity-foreground-8 = #3E7F80
+bar-capacity-foreground-9 = #3E7F80
 
 ; Only applies if <animation-charging> is used
 animation-charging-0 = 
